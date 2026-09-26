@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>岩芯样本切片实验室</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>岩芯样本切片实验室</h1>
+      <div class="meta">样本、切片任务、制片步骤、复核与交付</div>
+    </div>
+    <button id="reload">刷新</button>
+  </header>
+  <main>
+    <aside>
+      <form id="sample-form">
+        <h2>创建岩芯样本</h2>
+        <label>项目</label><input name="project" required>
+        <label>钻孔编号</label><input name="borehole" required>
+        <label>岩芯箱号</label><input name="coreBox" required>
+        <label>取样深度</label><input name="depth" required>
+        <label>负责人</label><input name="owner" required>
+        <label>初始切片编号</label><input name="sliceId" required>
+        <label>染色方法</label><input name="method" required>
+        <button>保存样本</button>
+      </form>
+    </aside>
+    <section>
+      <div class="stats" id="stats"></div>
+      <div class="grid" id="samples"></div>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
